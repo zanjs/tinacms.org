@@ -66,6 +66,12 @@
       "id": "/guides/nextjs/github-open-authoring/test",
       "slug": "/guides/nextjs/github-open-authoring/test",
       "data": "./test.md"
+    },
+    {
+      "title": "nextjs/github-open-authoring/test-2",
+      "id": "/guides/nextjs/github-open-authoring/test-2",
+      "slug": "/guides/nextjs/github-open-authoring/test-2",
+      "data": "./test-2.md"
     }
   ]
 }
