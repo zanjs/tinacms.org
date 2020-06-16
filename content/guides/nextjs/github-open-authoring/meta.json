@@ -60,6 +60,12 @@
       "id": "/guides/nextjs/github-open-authoring/hosting-vercel",
       "slug": "/guides/nextjs/github-open-authoring/hosting-vercel",
       "data": "./hosting-vercel.md"
+    },
+    {
+      "title": "nextjs/github-open-authoring/test",
+      "id": "/guides/nextjs/github-open-authoring/test",
+      "slug": "/guides/nextjs/github-open-authoring/test",
+      "data": "./test.md"
     }
   ]
 }
