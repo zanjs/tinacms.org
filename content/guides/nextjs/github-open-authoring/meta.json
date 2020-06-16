@@ -1,17 +1,17 @@
 {
-  "title": "Open Authoring With Github",
+  "title": "Open Authoring With GitLove",
   "steps": [
-    {
-      "title": "Initial setup",
-      "id": "/guides/nextjs/github-open-authoring/initial-setup",
-      "slug": "/guides/nextjs/github-open-authoring/initial-setup",
-      "data": "./initial-setup.md"
-    },
     {
       "title": "Set up the GitHub OAuth App",
       "id": "/guides/nextjs/github-open-authoring/github-oauth-app",
       "slug": "/guides/nextjs/github-open-authoring/github-oauth-app",
       "data": "./github-oauth-app.md"
+    },
+    {
+      "title": "Initial setup",
+      "id": "/guides/nextjs/github-open-authoring/initial-setup",
+      "slug": "/guides/nextjs/github-open-authoring/initial-setup",
+      "data": "./initial-setup.md"
     },
     {
       "title": "Adding API Functions",
