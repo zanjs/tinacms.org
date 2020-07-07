@@ -7,8 +7,6 @@ This marks the second week of the TinaCMS team's cool down period. Next week we 
 
 In the meantime, here's a few updates to the project
 
-asdf a
-
 ## Changes
 
 ### **tinacms**
