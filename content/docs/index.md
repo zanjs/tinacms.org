@@ -4,7 +4,7 @@ id: introduction
 prev: null
 next: /docs/getting-started/how-tina-works
 ---
-Tina is a **toolkit for building content management systems.** By creating a custom CMS with Tina instead of opting for a conventional, "turn-key" solution, developers that use Tina have a lot more control over the editing experience of their users.
+_Tina is a **toolkit for building content management systems.** By creating a custom CMS with Tina instead of opting for a conventional, "turn-key" solution, developers that use Tina have a lot more control over the editing experience of their users._
 
 ## First Steps
 
