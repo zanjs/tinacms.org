@@ -1,5 +1,5 @@
 ---
-title: TinaCMS Mocumentation
+title: TinaCMS Locumentation
 id: introduction
 ---
 
