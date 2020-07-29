@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+last_edited: 'July 29, 2020'
 ---
 This guide will show you how to set up **Git-based content** editing with Tina & Next.js. With a Git-based approach, changes made to content in Tina's editor are immediately written back to their local Markdown or JSON source files. Updated content files can then by 'saved' via commit and pushed to an origin Git repository.
 
@@ -48,4 +49,4 @@ class MyApp extends App {
 export default MyApp
 ```
 
-Next, **we'll set up a backend** to persist content changes.
+Next, **we'll set up a backend** to persist content changes. test
