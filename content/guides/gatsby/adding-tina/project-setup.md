@@ -23,7 +23,7 @@ yarn global add gatsby-cli
 gatsby new gatsby-starter-blog https://github.com/gatsbyjs/gatsby-starter-blog
 ```
 
-This will create a new blog starter in the `gatsby-starter-blog` directory. Navigate to the project directory and run `yarn dev` to start the website in dev mode.
+This will create a new blog starter in the `gatsby-starter-blog` directory. Navigate to the project directory and run `yarn dev` to start the websitgfde in dev mode.
 
 ```bash
 cd gatsby-starter-blog
@@ -81,4 +81,4 @@ module.exports = {
 
 Hooray!
 
-If you see the icon and can open the editing sidebar, this means you've successfully installed & configured Tina. You will see a note that there is no editable content on the site yet. Follow the next steps to learn how to make content editable.
+If you see the icon and can open the editing sidebar, this means you've successfully installed & configured Tina. You will see a note that there is no editable content on the site yet. Follow the next steps to learn how to make content editable.gdfg
