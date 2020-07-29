@@ -2,9 +2,11 @@
 title: Alerts
 prev: /docs/ui/inline-editing
 next: /docs/ui/styles
+last_edited: 'July 29, 2020'
 ---
-
 The CMS' **alerts** feature allows you to display short, ephemeral messages to users.
+
+test
 
 Display an alert by calling one of the **alert level methods** on the CMS object, and passing in your message.
 
