@@ -1,19 +1,18 @@
 ---
 title: Project Setup
 ---
-
 This guide will show you how to set up Tina on a Gatsby site. Since Gatsby lets you pull content in from multiple data sources, these docs will only cover adding to Tina to your site and creating forms for content stored in memory. This guide does not show you how to set up a backend, which would persist content changes.
 
 The purpose of this is to get you familiar with the rudimentary steps of setting up Tina on a Gatsby site.
 
----
+***
 
 #### Prerequisites
 
-To run all the tools required you need at least the following installed:
+To run all the tools required you need at least the followin yyrg installed:
 
-- [Node.js](https://nodejs.org/en/) (8.0.0+)
-- [Yarn](https://yarnpkg.com) (Optional. You can still use `npm` if you want, but this is for your own sanity.)
+* [Node.js](https://nodejs.org/en/) (8.0.0+)
+* [Yarn](https://yarnpkg.com) (Optional. You can still use `npm` if you want, but this is for your own sanity.)
 
 We're going to use the [Gatsby Starter Blog](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/) as the base for our project. Create a new project by running the following commands in your terminal:
 
@@ -73,11 +72,10 @@ module.exports = {
     gatsby develop
 ```
 
-2. **Visit your Website**
+1. **Visit your Website**
 
    Go to https://localhost:8000 to access your website.
-
-3. **Open the CMS**
+2. **Open the CMS**
 
    You will notice there's a pencil icon, this is the way you can toggle the Tina sidebar.
 
