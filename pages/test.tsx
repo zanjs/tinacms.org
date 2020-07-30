@@ -34,17 +34,14 @@ export default function TestPage({ guidesIndex, packagesIndex }) {
 }
 
 export const getStaticProps = async ({ preview }) => {
+  const guides = path.resolve(process.cwd(), './content/guides/index.md')
+  const pkgs = path.resolve(process.cwd(), './content/packages.json')
   return {
     props: {
       withoutGithub: true,
       preview: !!preview,
-      guidesIndex: await fs.readFileSync(
-        path.resolve(process.cwd(), './content/guides/index.md'),
-        'utf8'
-      ),
-      packagesIndex: await readJsonFile(
-        path.resolve(process.cwd(), './content/packages.json')
-      ),
+      guidesIndex: await fs.readFileSync(guides, 'utf8'),
+      packagesIndex: await readJsonFile(pkgs),
     },
   }
 }
