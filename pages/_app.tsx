@@ -72,7 +72,8 @@ const MainLayout = ({ Component, pageProps }) => {
       <GlobalStyles />
       {loadFonts && <FontLoader />}
       <ModalProvider>
-        <TinacmsGithubProvider
+        <MaybeGithubProvider
+          useGithub={!pageProps.withoutGithub}
           onLogin={enterEditMode}
           onLogout={exitEditMode}
           error={pageProps.error}
@@ -107,10 +108,31 @@ const MainLayout = ({ Component, pageProps }) => {
           </Head>
           <GlobalStyle />
           <Component {...pageProps} />
-        </TinacmsGithubProvider>
+        </MaybeGithubProvider>
       </ModalProvider>
     </TinaProvider>
   )
+}
+
+const MaybeGithubProvider = ({
+  useGithub,
+  enterEditMode,
+  exitEditMode,
+  error,
+  children,
+}: any) => {
+  if (useGithub) {
+    return (
+      <TinacmsGithubProvider
+        onLogin={enterEditMode}
+        onLogout={exitEditMode}
+        error={error}
+      >
+        {children}
+      </TinacmsGithubProvider>
+    )
+  }
+  return children
 }
 
 function useShouldLoadFont(cms: TinaCMS) {

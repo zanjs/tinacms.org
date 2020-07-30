@@ -23,6 +23,7 @@ export default function TestPage({ guidesIndex, packagesIndex }) {
 export const getStaticProps = async ({ preview }) => {
   return {
     props: {
+      withoutGithub: true,
       preview: !!preview,
       guidesIndex: await readMarkdownFile(
         path.resolve(process.cwd(), './content/guides/index.md')
