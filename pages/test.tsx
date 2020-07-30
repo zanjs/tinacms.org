@@ -10,7 +10,23 @@ export default function TestPage({ guidesIndex, packagesIndex }) {
   return (
     <div>
       <span>CMS is {cms.enabled ? 'Enabled' : 'Disabled'}</span>
-      <EditLink />
+      <hr />
+      <button
+        onClick={() => {
+          fetch('/api/preview-test').then(() => window.location.reload())
+        }}
+      >
+        Enter preview mode
+      </button>
+      <hr />
+      <button
+        onClick={() => {
+          fetch('/api/reset-preview').then(() => window.location.reload())
+        }}
+      >
+        Exit preview mode
+      </button>
+      <hr />
       <MarkdownContent
         escapeHtml={false}
         content={guidesIndex.data.markdownBody}
