@@ -5,7 +5,12 @@ import { MarkdownContent } from 'components/layout'
 import { useCMS } from 'tinacms'
 import fs from 'fs'
 
-export default function TestPage({ guidesIndex, packagesIndex }) {
+export default function TestPage({
+  guidesIndex,
+  packagesIndex,
+  contentRoot,
+  guidesRoot,
+}) {
   const cms = useCMS()
   return (
     <div>
@@ -27,15 +32,26 @@ export default function TestPage({ guidesIndex, packagesIndex }) {
         Exit preview mode
       </button>
       <hr />
-      <pre>{JSON.stringify(guidesIndex)}</pre>
-      <pre>{JSON.stringify(packagesIndex)}</pre>
+      <pre>{JSON.stringify(contentRoot, null, 4)}</pre>
+      <hr />
+      <pre>{JSON.stringify(guidesRoot, null, 4)}</pre>
+      <hr />
+      <pre>{JSON.stringify(guidesIndex, null, 4)}</pre>
+      <hr />
+      <pre>{JSON.stringify(packagesIndex, null, 4)}</pre>
     </div>
   )
 }
 
 export const getStaticProps = async ({ preview }) => {
+  const contentRoot = fs.readdirSync(path.resolve(process.cwd(), './content'))
+  const guidesRoot = fs.readdirSync(
+    path.resolve(process.cwd(), './content/guides')
+  )
   return {
     props: {
+      contentRoot,
+      guidesRoot,
       withoutGithub: true,
       preview: !!preview,
       guidesIndex: await fs.readFileSync(
