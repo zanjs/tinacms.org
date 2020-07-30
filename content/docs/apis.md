@@ -5,11 +5,11 @@ next: null
 consumes:
   - file: /packages/@tinacms/core/src/cms.ts
     description: Demonstrates adding APIs to CMS obj
-last_edited: 'July 30, 2020'
+last_edited: '2020-07-30T15:41:32.117Z'
 ---
 **APIs** in the CMS are objects intended to communicate with third-party services. Unlike Plugins, which can modify the behavior of the CMS, APIs do not interact with Tina's UI or internals. APIs allow you to achieve [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) with Tina.
 
-## test Adding an API
+##  test test Adding an API
 
 Whereas Plugins can include multiple objects grouped under a single type, each API registered to the CMS has its own namespace.
 
