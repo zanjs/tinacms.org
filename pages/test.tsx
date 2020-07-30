@@ -1,9 +1,10 @@
-import path from 'path'
 import { readMarkdownFile } from 'utils/getMarkdownFile'
 import { readJsonFile } from 'utils/getJsonPreviewProps'
 import { MarkdownContent } from 'components/layout'
 import { useCMS } from 'tinacms'
 import fs from 'fs'
+
+const path = __non_webpack_require__('path')
 
 export default function TestPage({ guidesIndex, packagesIndex }) {
   const cms = useCMS()
