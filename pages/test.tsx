@@ -48,19 +48,32 @@ export const getStaticProps = async ({ preview }) => {
   const guidesRoot = fs.readdirSync(
     path.resolve(process.cwd(), './content/guides')
   )
+
+  let guidesIndex = {}
+  let packagesIndex = {}
+  try {
+    guidesIndex = await fs.readFileSync(
+      path.resolve(process.cwd(), './content/guides/index.md'),
+      'utf8'
+    )
+  } catch (e) {
+    console.error(e)
+  }
+  try {
+    packagesIndex = await readJsonFile(
+      path.resolve(process.cwd(), './content/packages.json')
+    )
+  } catch (e) {
+    console.error(e)
+  }
   return {
     props: {
       contentRoot,
       guidesRoot,
       withoutGithub: true,
       preview: !!preview,
-      guidesIndex: await fs.readFileSync(
-        path.resolve(process.cwd(), './content/guides/index.md'),
-        'utf8'
-      ),
-      packagesIndex: await readJsonFile(
-        path.resolve(process.cwd(), './content/packages.json')
-      ),
+      guidesIndex,
+      packagesIndex,
     },
   }
 }
