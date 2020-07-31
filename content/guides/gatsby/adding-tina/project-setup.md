@@ -1,5 +1,6 @@
 ---
 title: Project Setup
+last_edited: '2020-07-31T20:57:46.644Z'
 ---
 
 This guide will show you how to set up Tina on a Gatsby site. Since Gatsby lets you pull content in from multiple data sources, these docs will only cover adding to Tina to your site and creating forms for content stored in memory. This guide does not show you how to set up a backend, which would persist content changes.
@@ -8,7 +9,7 @@ The purpose of this is to get you familiar with the rudimentary steps of setting
 
 ---
 
-#### Prerequisites
+## Prerequisites
 
 To run all the tools required you need at least the following installed:
 
