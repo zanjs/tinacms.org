@@ -1,8 +1,10 @@
 ---
 title: TinaCMS Documentation
 id: introduction
-last_edited: '2020-08-06T17:43:38.694Z'
+last_edited: '2020-08-06T18:06:39.248Z'
 ---
+![](public/img/floki2.jpg)
+
 Tina is a **toolkit for building content management systems.** By creating a custom CMS with Tina instead of opting for a conventional, "turn-key" solution, developers that use Tina have a lot more control over the editing experience of their users.
 
 ![](public/img/floki3.jpg)
@@ -64,3 +66,5 @@ Tina is designed to work with just about any React framework. Once you're comfor
 
 * [Next.js](/docs/integrations/nextjs)
 * [Gatsby](/docs/integrations/gatsby)
+
+![](public/img/floki2.jpg)
